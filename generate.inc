@@ -144,7 +144,8 @@ generate_sin:
         stx $d015
 // ----------------------------------------------------------------------------
 //      Generate x^2 tables
-//      See GENERATE_SQUARE_TABLES in mul.inc for the original version.
+//      Derived from Graham's code:
+//        https://codebase64.org/doku.php?id=base:table_generator_routine_for_fast_8_bit_mul_table
 // ----------------------------------------------------------------------------
 .const sqr_lo = sqr_tables
 .const sqr_hi = sqr_tables+$200
